@@ -1,0 +1,26 @@
+<products>
+    <product>
+        <id>1</id>
+        <name>Wireless Mouse</name>
+        <price>25.99</price>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>2</id>
+        <name>Bluetooth Headphones</name>
+        <price>59.99</price>
+        <category>Electronics</category>
+    </product>
+    <product>
+        <id>3</id>
+        <name>Coffee Maker</name>
+        <price>89.99</price>
+        <category>Home Appliances</category>
+    </product>
+    <product>
+        <id>4</id>
+        <name>Yoga Mat</name>
+        <price>19.99</price>
+        <category>Fitness</category>
+    </product>
+</products>
