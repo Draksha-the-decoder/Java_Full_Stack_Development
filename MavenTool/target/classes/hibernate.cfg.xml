@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 5.3//EN" "http://hibernate.org/dtd/hibernate-configuration-3.0.dtd">  
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://127.0.0.1:3306/WebApp</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">P@$$w0rd</property>
+			<!-- Dialect means SQL Database syntax -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.autocommit">false</property>
+		<property name="hibernate.show_sql">true</property>
+			<!-- to create tables automatically if exists then drops and recreates -->
+		<!-- <property name="hibernate.hbm2ddl.auto">create</property> -->
+		<!-- to use existing tables, if not exist then create new -->
+		<property name="hibernate.hbm2ddl.auto">update</property>
+		<mapping resource="emp.hbm.xml"/>
+		<mapping class="com.hibernate.Product"/>
+	</session-factory>
+ </hibernate-configuration>
