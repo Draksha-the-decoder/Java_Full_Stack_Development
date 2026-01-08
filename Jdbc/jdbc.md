@@ -1,5 +1,3 @@
-Date:06/Dec/2024
-----------------
 JDBC
 ----
 - JDBC stands for Java Database Connectivity
@@ -91,4 +89,5 @@ PreparedStatement interface
 - If the same SQL command is executed multiple times in the program then it is suggested to use
   PreparedStatement
 - PreparedStatement is dynamic means during runtime we can pass values to SQL command
+
  
