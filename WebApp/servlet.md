@@ -96,7 +96,7 @@ public class HelloServlet extends GenericServlet {
 }
 ```
 
-### 1. Extending `GenericServlet` class
+### 2. Extending `HttpServlet` class
 
 ```java	
 public class HelloServlet extends HttpServlet
@@ -178,4 +178,5 @@ web.xml
  - in a web application we can have only one web.xml file
  - <web-app> is the root element of web.xml file
  - web.xml file is present in WEB-INF folder
+
  
