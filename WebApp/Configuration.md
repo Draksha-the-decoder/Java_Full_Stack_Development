@@ -23,6 +23,7 @@
 
 1. Go to:  **File > New > Dynamic Web Project** 
 2. Make sure the **Target Runtime** is set to your configured **Apache Tomcat v10**
+3. Create a Servlet in WebProject: WebProject -> New -> Servlet -> Class name : HelloServlet -> Finish
   
 > ⚠️ **Important:**  
 > Always connect and configure the Tomcat server **before** creating your web project.  
@@ -38,6 +39,12 @@
 2. Select **Run As > Run on Server**  
 3. Choose **Apache Tomcat v10**  
 4. Click **Finish**  
-5. Open your browser and visit localhost:8080  
+5. Open your browser and visit localhost:8080 : http://localhost:8080/WebProject/HelloServlet
+- http => hypertext transfer protocol
+- localhost => IP Address or Hostname of tomcat server
+- 8080 => port number where tomcat server is running
+- WebProject => Project Name / Application Name
+- HelloServlet => url pattern
+
 
 >for jdbc connection the driver jar file should be in  WEB-INF > lib
