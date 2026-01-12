@@ -179,4 +179,44 @@ web.xml
  - <web-app> is the root element of web.xml file
  - web.xml file is present in WEB-INF folder
 
- 
+## GET vs POST 
+In case of GET method the data goes along with the url (visible in URL) where as
+in case of POST method the data goes as a separate page (not visible in URL)
+
+## Passing data through web.xml file to servlet 
+### 1. ServletConfig interface 
+This interface is used to read initial parameters from web.xml file into a particular Servlet
+```xml
+ <servlet>
+    <description></description>
+    <display-name>ServletConfigDemo</display-name>
+    <servlet-name>ServletConfigDemo</servlet-name>
+    <servlet-class>ServletConfigDemo</servlet-class>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>admin</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>root</param-value>
+    </init-para
+```
+```java
+ServletConfig config = getServletConfig();//implemented by GenericServlet class
+String username = config.getInitParameter("username"); 
+```
+
+### 2. ServletContext interface 
+This interface is used to read context parameters (global) from web.xml file to all servlets of web application
+```xml
+<web-app>
+	<context-param>
+	    <param-name>collegeName</param-name>
+	    <param-value>RRRCollege</param-value>
+  </context-param>
+</web-app>
+```
+```java
+ServletContext context = getServletContext();//implemented by GenericServlet class
+String collegeName = context.getInitParameter("collegeName");
+```
