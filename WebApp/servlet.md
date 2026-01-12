@@ -220,3 +220,5 @@ This interface is used to read context parameters (global) from web.xml file to 
 ServletContext context = getServletContext();//implemented by GenericServlet class
 String collegeName = context.getInitParameter("collegeName");
 ```
+
+![Login_Application](./Login_Application.png)
