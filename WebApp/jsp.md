@@ -201,4 +201,6 @@ public class Employee
    ...
    ...
 }
+
+![Javabeans in JSP](./Javabeans_in_JSP.png)
  
